@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Form_Peminjam">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="Pinjam Ruangan"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/pinjam_gedung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Gedung"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/pinjam_ruang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Ruangan"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/pinjam_matkul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Keterangan"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/pinjam_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dd/mm/yyyy"
+        android:inputType="date"/>
+
+    <EditText
+    android:id="@+id/pinjam_mulai"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="10:00"
+    android:inputType="time"/>
+
+    <EditText
+        android:id="@+id/pinjam_selesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="11:00"
+        android:inputType="time"/>
+
+    <Button
+        android:id="@+id/submit_pinjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>
